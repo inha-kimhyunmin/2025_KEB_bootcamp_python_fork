@@ -31,7 +31,7 @@ def my_pow(b, e) -> float:
 def is_prime(num) -> bool:
     if num >= 2:
         i = 2
-        while i <= my_pow(num, 0.5):
+        while i <= int(my_pow(num, 0.5)) + 1:
             if num % i == 0:
                 return False
             i = i + 1
